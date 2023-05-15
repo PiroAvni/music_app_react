@@ -1,33 +1,44 @@
-
 import Button from "react-bootstrap/Button";
-// import Button from ("../Buttons/buttons")
 import Card from "react-bootstrap/Card";
 import { albums } from "../../data/albums.json";
-import "./card.css"
+import { useState } from "react";
+
+import "./card.css";
+
 function AlbumCards() {
+  const [favourite, setFavourite] = useState(false);
+
+  const handleFavorite = (e) => {
+    if (favourite === false) {
+      setFavourite(prevState => prevState = true);
+      e.target.innerText = "Dislike";
+    } else {
+      setFavourite(prevState => prevState = false);
+      e.target.innerText = "Favourite";
+    }
+  };
   console.log(albums);
 
-
-
-  
   return (
     <div className="card-container">
-      {albums.map((name, index) => {
-        console.log("line 13:", name.cover);
-        console.log("line 14", index);
+    
+      {albums.map((album, index) => {
         return (
-          
-          <Card style={{ width: "18rem" }} key={index}>
-            <Card.Img variant="top" src={name.cover} alt="Album Cover" />
-            <Card.Body>
-              <Card.Title> Album Title: {name.name}</Card.Title>
-              <Card.Text>
-               Release Date: {name.date}
-              </Card.Text>
-              <Button   variant="primary">Love</Button>
-            </Card.Body>
-          </Card>
-        );
+        <Card
+          style={{
+            width: "18rem",
+          }}
+          key={index}
+        >
+          <Card.Img variant="top" src={album.cover} alt="Album Cover" />
+          <Card.Body>
+            <Card.Title> Album Title: {album.name} </Card.Title>
+            <Card.Text>Release Date: {album.date} </Card.Text>
+            <Button onClick={handleFavorite} variant="primary">
+              Favourite
+            </Button>
+          </Card.Body>
+        </Card>)
       })}
     </div>
   );

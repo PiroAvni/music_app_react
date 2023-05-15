@@ -3,7 +3,7 @@ import "../form/form.css"
 
 
 
-export default function UserForm({handleUsername}) {
+export default function UserForm(handleUsername) {
     const [inputText, setInputText] = useState('')
 
     const handleInput = (e) => {
@@ -12,9 +12,9 @@ export default function UserForm({handleUsername}) {
 
     return (
         <>
-            <form class='form-container' >
+            <form className='form-container' >
                 <label
-                    for='Name'>
+                   htmlFor='Name'>
                         What is your name? 
                 </label>
                 <input 

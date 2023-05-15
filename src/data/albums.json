@@ -3,12 +3,12 @@
       {
         "name": "Thriller",
         "date": "1982-11-29",
-        "cover": ""
+        "cover": "../assets/thriller.jpg"
       },
       {
         "name": "Bad",
         "date": "1987-08-31",
-        "cover": ""
+        "cover": "../assets/bad.jpg"
       },
       {
         "name": "Off The Wall",
