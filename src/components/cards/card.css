@@ -1,0 +1,13 @@
+.card{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.card-container{
+    height: 500px;
+    background-image: url("../../assets/mj1.png");
+    display:flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}

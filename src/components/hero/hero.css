@@ -1,0 +1,24 @@
+
+.hero-container{
+    background-image: url("../../assets/mj-bk-2.jpg");
+    height: 500px;
+ 
+
+  }
+ .hero{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2rem;;
+ 
+ }
+  .description{
+    margin-top: 50px;
+    width: 500px;
+    color: #fff;
+ 
+  }
+  .title{
+    margin-top: 5rem;
+    color: #fff;
+  }

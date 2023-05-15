@@ -1,0 +1,24 @@
+{
+    "albums": [
+      {
+        "name": "Thriller",
+        "date": "1982-11-29",
+        "cover": ""
+      },
+      {
+        "name": "Bad",
+        "date": "1987-08-31",
+        "cover": ""
+      },
+      {
+        "name": "Off The Wall",
+        "date": "1979-08-10",
+        "cover": ""
+      },
+      {
+        "name": "Dangerous",
+        "date": "2020-11-27",
+        "cover": ""
+      }
+    ]
+  }
